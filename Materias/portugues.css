@@ -1,0 +1,68 @@
+h3 {
+    margin-left: 25px;
+    font-size: 28px;
+    color: #2563EB;
+    font-weight: 700;
+}
+
+ul {
+    margin-top: 5%;
+    list-style-type: disc;
+    position: relative;
+    left: 5%;
+    width: 80vw;
+}
+
+.topicos > ul > li {
+    position: relative;
+    margin-top: 3%;
+    
+}
+
+.topicos > ul > li > a{
+    color: black;
+    font-size: 22px;
+
+}
+
+p {
+    width: max-content;
+}
+
+span {
+    visibility: hidden; /* Esconde o elemento */
+    transition: 0.8s;
+
+}
+
+li > .box {
+    position: absolute;
+    width: calc(max-content - 20px) ;
+    height: max-content;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    position: absolute;
+    text-align: center;
+    border-radius: 10px;
+    visibility: hidden;
+    transition: 0.8s;
+}
+
+.topicos > ul > li > a:hover{
+    transition: 0.8s;
+   font-weight: bold;
+}
+
+.topicos > ul > li:hover > .box {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    bottom: 1vh;
+}
+
+li:hover > .box > span {
+    font-size: 20px;
+    opacity: 1;
+    margin-top: 50%;
+    visibility: visible;
+}
