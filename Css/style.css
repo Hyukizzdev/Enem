@@ -54,7 +54,7 @@ aside nav {
 
 aside nav a {
   margin-left: 2rem;
-  font-size: 4rem;
+  font-size: 3.6rem;
   color: white;
   width: max-content;
   transition: .5s;
@@ -114,9 +114,9 @@ aside nav a:hover:nth-of-type(12) {
 
 main {
   border: 1px solid blue;
-  margin-left: 20vw;
+  margin-left: 18vw;
   margin-top: 2rem;
-  width: 80vw;
+  width: 82vw;
   height: max-content;
 }
 
@@ -127,10 +127,13 @@ main > h1 {
 }
 
 main article {
+  background-color: #eaebee;
   margin-top: 5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 main article a {
@@ -139,15 +142,17 @@ main article a {
 
 main article a figure {
   width: 25rem;
-  height: 25rem;
-  border: 1px solid #E2E8F0;
+  height: 27rem;
+  border: 1px solid #d3d9e0;
   background: #FFFFFF;
   border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 2.8rem;
+  margin-top: 1.2rem;
+  transition: .6s;
 }
 
 article a figure img {
@@ -156,5 +161,10 @@ article a figure img {
 }
 
 article a figure figcaption {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: black;
+}
+
+article a figure:hover {
+  scale: 1.03;
 }
